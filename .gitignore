@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary / OS files
+.DS_Store
+*.tmp
+*.swp
+*.zip
+
+# Sensitive environment files
+.env
+*.env

@@ -1,0 +1,11 @@
+{
+  "attempts": {
+    "249b4dc8fb6f7ed524520d93731e4756e538d49df1adf6b48371c281b0158ad9": {
+      "timestamp": "2026-10-01T17:52:22.951176+00:00",
+      "record_id": "DEMO-FAILURE",
+      "channel": "email",
+      "result": "FAILED_SIMULATED",
+      "detail": "Injected local demo error; no network request, no message sent, no automatic retry."
+    }
+  }
+}

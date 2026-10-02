@@ -1,0 +1,657 @@
+2026-10-01 23:12:24,614Z ERROR catalogue_page_failed page=1 error=<urlopen error [Errno 8] nodename nor servname provided, or not known>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1321, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1358, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1404, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1492, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/client.py", line 1023, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 846, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 91, in main
+    root=parse(fetch(url)); articles=[n for n in allnodes(root,"article") if cls(n,"product_pod")]
+               ~~~~~^^^^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 38, in fetch
+    with urlopen(req, timeout=timeout) as r: return r.read().decode("utf-8", "replace")
+         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 487, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1369, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/urllib/request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-10-01 23:12:39,747Z INFO detail_start url=https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+2026-10-01 23:12:41,068Z INFO product_saved record_id=a897fe39b1053632 url=https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html
+2026-10-01 23:12:41,274Z INFO detail_start url=https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html
+2026-10-01 23:12:42,567Z INFO product_saved record_id=90fa61229261140a url=https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html
+2026-10-01 23:12:42,772Z INFO detail_start url=https://books.toscrape.com/catalogue/soumission_998/index.html
+2026-10-01 23:12:44,114Z INFO product_saved record_id=6957f44c3847a760 url=https://books.toscrape.com/catalogue/soumission_998/index.html
+2026-10-01 23:12:44,319Z INFO detail_start url=https://books.toscrape.com/catalogue/sharp-objects_997/index.html
+2026-10-01 23:12:45,715Z INFO product_saved record_id=e00eb4fd7b871a48 url=https://books.toscrape.com/catalogue/sharp-objects_997/index.html
+2026-10-01 23:12:45,920Z INFO detail_start url=https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html
+2026-10-01 23:12:47,317Z INFO product_saved record_id=4165285e1663650f url=https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html
+2026-10-01 23:12:47,522Z INFO detail_start url=https://books.toscrape.com/catalogue/the-requiem-red_995/index.html
+2026-10-01 23:12:48,896Z INFO product_saved record_id=f77dbf2323deb740 url=https://books.toscrape.com/catalogue/the-requiem-red_995/index.html
+2026-10-01 23:12:49,102Z INFO detail_start url=https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+2026-10-01 23:12:50,597Z INFO product_saved record_id=2597b5a345f45e1b url=https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html
+2026-10-01 23:12:50,803Z INFO detail_start url=https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html
+2026-10-01 23:12:52,257Z INFO product_saved record_id=e72a5dfc7e9267b2 url=https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html
+2026-10-01 23:12:52,460Z INFO detail_start url=https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html
+2026-10-01 23:12:53,872Z INFO product_saved record_id=e10e1e165dc8be4a url=https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html
+2026-10-01 23:12:54,077Z INFO detail_start url=https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+2026-10-01 23:12:55,390Z INFO product_saved record_id=1dfe412b8ac00530 url=https://books.toscrape.com/catalogue/the-black-maria_991/index.html
+2026-10-01 23:12:55,593Z INFO detail_start url=https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html
+2026-10-01 23:12:57,049Z INFO product_saved record_id=0312262ecafa5a40 url=https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html
+2026-10-01 23:12:57,254Z INFO detail_start url=https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html
+2026-10-01 23:12:58,612Z INFO product_saved record_id=30a7f60cd76ca58c url=https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html
+2026-10-01 23:12:58,817Z INFO detail_start url=https://books.toscrape.com/catalogue/set-me-free_988/index.html
+2026-10-01 23:13:00,156Z INFO product_saved record_id=ce6396b0f23f6ecc url=https://books.toscrape.com/catalogue/set-me-free_988/index.html
+2026-10-01 23:13:00,361Z INFO detail_start url=https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+2026-10-01 23:13:01,722Z INFO product_saved record_id=3b1c02bac2a429e6 url=https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html
+2026-10-01 23:13:01,926Z INFO detail_start url=https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html
+2026-10-01 23:13:03,739Z INFO product_saved record_id=a34ba96d4081e6a4 url=https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html
+2026-10-01 23:13:03,944Z INFO detail_start url=https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html
+2026-10-01 23:13:05,288Z INFO product_saved record_id=deda3e61b9514b83 url=https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html
+2026-10-01 23:13:05,491Z INFO detail_start url=https://books.toscrape.com/catalogue/olio_984/index.html
+2026-10-01 23:13:09,982Z INFO product_saved record_id=feb7cc7701ecf901 url=https://books.toscrape.com/catalogue/olio_984/index.html
+2026-10-01 23:13:10,184Z INFO detail_start url=https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html
+2026-10-01 23:13:15,152Z INFO product_saved record_id=e30f54cea9b38190 url=https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html
+2026-10-01 23:13:15,357Z INFO detail_start url=https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html
+2026-10-01 23:13:17,663Z INFO product_saved record_id=a18a4f574854aced url=https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html
+2026-10-01 23:13:17,867Z INFO detail_start url=https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html
+2026-10-01 23:13:21,932Z INFO product_saved record_id=a22124811bfa8350 url=https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html
+2026-10-01 23:13:22,138Z INFO page_completed page=1 records=20
+2026-10-01 23:13:28,949Z INFO detail_start url=https://books.toscrape.com/catalogue/in-her-wake_980/index.html
+2026-10-01 23:13:33,019Z INFO product_saved record_id=23356462d1320d61 url=https://books.toscrape.com/catalogue/in-her-wake_980/index.html
+2026-10-01 23:13:33,222Z INFO detail_start url=https://books.toscrape.com/catalogue/how-music-works_979/index.html
+2026-10-01 23:13:34,549Z INFO product_saved record_id=327f68a59745c102 url=https://books.toscrape.com/catalogue/how-music-works_979/index.html
+2026-10-01 23:13:34,754Z INFO detail_start url=https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html
+2026-10-01 23:13:40,902Z INFO product_saved record_id=5674a18a29a43ced url=https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html
+2026-10-01 23:13:41,107Z INFO detail_start url=https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html
+2026-10-01 23:13:45,167Z INFO product_saved record_id=c2e46a2ee3b4a322 url=https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html
+2026-10-01 23:13:45,373Z INFO detail_start url=https://books.toscrape.com/catalogue/black-dust_976/index.html
+2026-10-01 23:13:48,775Z INFO product_saved record_id=00bfed9e18bb36f3 url=https://books.toscrape.com/catalogue/black-dust_976/index.html
+2026-10-01 23:13:48,978Z INFO detail_start url=https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html
+2026-10-01 23:13:53,883Z INFO product_saved record_id=9528d0948525bf5f url=https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html
+2026-10-01 23:13:54,086Z INFO detail_start url=https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html
+2026-10-01 23:13:57,874Z INFO product_saved record_id=c7d160c2c0de586f url=https://books.toscrape.com/catalogue/americas-cradle-of-quarterbacks-western-pennsylvanias-football-factory-from-johnny-unitas-to-joe-montana_974/index.html
+2026-10-01 23:13:58,079Z INFO detail_start url=https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html
+2026-10-01 23:14:03,868Z INFO product_saved record_id=904208d6aa64b655 url=https://books.toscrape.com/catalogue/aladdin-and-his-wonderful-lamp_973/index.html
+2026-10-01 23:14:04,074Z INFO detail_start url=https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html
+2026-10-01 23:14:11,240Z INFO product_saved record_id=4c28def39d850cdf url=https://books.toscrape.com/catalogue/worlds-elsewhere-journeys-around-shakespeares-globe_972/index.html
+2026-10-01 23:14:11,446Z INFO detail_start url=https://books.toscrape.com/catalogue/wall-and-piece_971/index.html
+2026-10-01 23:14:12,801Z INFO product_saved record_id=ccd9ffa25efabdea url=https://books.toscrape.com/catalogue/wall-and-piece_971/index.html
+2026-10-01 23:14:13,001Z INFO detail_start url=https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html
+2026-10-01 23:14:16,073Z INFO product_saved record_id=6258a1f6a6dcfe50 url=https://books.toscrape.com/catalogue/the-four-agreements-a-practical-guide-to-personal-freedom_970/index.html
+2026-10-01 23:14:16,274Z INFO detail_start url=https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html
+2026-10-01 23:14:21,943Z INFO product_saved record_id=3c039985229453bf url=https://books.toscrape.com/catalogue/the-five-love-languages-how-to-express-heartfelt-commitment-to-your-mate_969/index.html
+2026-10-01 23:14:22,147Z INFO detail_start url=https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html
+2026-10-01 23:14:27,723Z INFO product_saved record_id=5dada2b7be26bd03 url=https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html
+2026-10-01 23:14:27,928Z INFO detail_start url=https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html
+2026-10-01 23:14:31,023Z INFO product_saved record_id=9f6568e9c95f60b0 url=https://books.toscrape.com/catalogue/the-bear-and-the-piano_967/index.html
+2026-10-01 23:14:31,227Z INFO detail_start url=https://books.toscrape.com/catalogue/sophies-world_966/index.html
+2026-10-01 23:14:33,587Z INFO product_saved record_id=6be3beb0793a53e7 url=https://books.toscrape.com/catalogue/sophies-world_966/index.html
+2026-10-01 23:14:33,792Z INFO detail_start url=https://books.toscrape.com/catalogue/penny-maybe_965/index.html
+2026-10-01 23:14:36,216Z INFO product_saved record_id=668fe56b17cfcd4f url=https://books.toscrape.com/catalogue/penny-maybe_965/index.html
+2026-10-01 23:14:36,421Z INFO detail_start url=https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html
+2026-10-01 23:14:37,752Z INFO product_saved record_id=094b269567e1c300 url=https://books.toscrape.com/catalogue/maude-1883-1993she-grew-up-with-the-country_964/index.html
+2026-10-01 23:14:37,958Z INFO detail_start url=https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html
+2026-10-01 23:14:42,918Z INFO product_saved record_id=19ed25f4641d5efd url=https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html
+2026-10-01 23:14:43,120Z INFO detail_start url=https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html
+2026-10-01 23:14:46,469Z INFO product_saved record_id=be5cc846f45496fb url=https://books.toscrape.com/catalogue/behind-closed-doors_962/index.html
+2026-10-01 23:14:46,672Z INFO detail_start url=https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html
+2026-10-01 23:15:29,709Z INFO detail_start url=https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html
+2026-10-01 23:15:35,422Z ERROR detail_failed url=https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:35,631Z INFO page_completed page=2 records=39
+2026-10-01 23:15:37,293Z INFO detail_start url=https://books.toscrape.com/catalogue/slow-states-of-collapse-poems_960/index.html
+2026-10-01 23:15:40,093Z ERROR detail_failed url=https://books.toscrape.com/catalogue/slow-states-of-collapse-poems_960/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:40,299Z INFO detail_start url=https://books.toscrape.com/catalogue/reasons-to-stay-alive_959/index.html
+2026-10-01 23:15:43,470Z ERROR detail_failed url=https://books.toscrape.com/catalogue/reasons-to-stay-alive_959/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:43,676Z INFO detail_start url=https://books.toscrape.com/catalogue/private-paris-private-10_958/index.html
+2026-10-01 23:15:47,062Z ERROR detail_failed url=https://books.toscrape.com/catalogue/private-paris-private-10_958/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:47,268Z INFO detail_start url=https://books.toscrape.com/catalogue/higherselfie-wake-up-your-life-free-your-soul-find-your-tribe_957/index.html
+2026-10-01 23:15:49,632Z ERROR detail_failed url=https://books.toscrape.com/catalogue/higherselfie-wake-up-your-life-free-your-soul-find-your-tribe_957/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:49,839Z INFO detail_start url=https://books.toscrape.com/catalogue/without-borders-wanderlove-1_956/index.html
+2026-10-01 23:15:51,173Z ERROR detail_failed url=https://books.toscrape.com/catalogue/without-borders-wanderlove-1_956/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:51,377Z INFO detail_start url=https://books.toscrape.com/catalogue/when-we-collided_955/index.html
+2026-10-01 23:15:56,730Z ERROR detail_failed url=https://books.toscrape.com/catalogue/when-we-collided_955/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:56,936Z INFO detail_start url=https://books.toscrape.com/catalogue/we-love-you-charlie-freeman_954/index.html
+2026-10-01 23:15:58,294Z ERROR detail_failed url=https://books.toscrape.com/catalogue/we-love-you-charlie-freeman_954/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:15:58,499Z INFO detail_start url=https://books.toscrape.com/catalogue/untitled-collection-sabbath-poems-2014_953/index.html
+2026-10-01 23:15:59,824Z ERROR detail_failed url=https://books.toscrape.com/catalogue/untitled-collection-sabbath-poems-2014_953/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:00,029Z INFO detail_start url=https://books.toscrape.com/catalogue/unseen-city-the-majesty-of-pigeons-the-discreet-charm-of-snails-other-wonders-of-the-urban-wilderness_952/index.html
+2026-10-01 23:16:01,625Z ERROR detail_failed url=https://books.toscrape.com/catalogue/unseen-city-the-majesty-of-pigeons-the-discreet-charm-of-snails-other-wonders-of-the-urban-wilderness_952/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:01,830Z INFO detail_start url=https://books.toscrape.com/catalogue/unicorn-tracks_951/index.html
+2026-10-01 23:16:05,330Z ERROR detail_failed url=https://books.toscrape.com/catalogue/unicorn-tracks_951/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:05,534Z INFO detail_start url=https://books.toscrape.com/catalogue/unbound-how-eight-technologies-made-us-human-transformed-society-and-brought-our-world-to-the-brink_950/index.html
+2026-10-01 23:16:09,542Z ERROR detail_failed url=https://books.toscrape.com/catalogue/unbound-how-eight-technologies-made-us-human-transformed-society-and-brought-our-world-to-the-brink_950/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:09,749Z INFO detail_start url=https://books.toscrape.com/catalogue/tsubasa-world-chronicle-2-tsubasa-world-chronicle-2_949/index.html
+2026-10-01 23:16:11,450Z ERROR detail_failed url=https://books.toscrape.com/catalogue/tsubasa-world-chronicle-2-tsubasa-world-chronicle-2_949/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:11,654Z INFO detail_start url=https://books.toscrape.com/catalogue/throwing-rocks-at-the-google-bus-how-growth-became-the-enemy-of-prosperity_948/index.html
+2026-10-01 23:16:14,004Z ERROR detail_failed url=https://books.toscrape.com/catalogue/throwing-rocks-at-the-google-bus-how-growth-became-the-enemy-of-prosperity_948/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:14,211Z INFO detail_start url=https://books.toscrape.com/catalogue/this-one-summer_947/index.html
+2026-10-01 23:16:16,636Z ERROR detail_failed url=https://books.toscrape.com/catalogue/this-one-summer_947/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:16,839Z INFO detail_start url=https://books.toscrape.com/catalogue/thirst_946/index.html
+2026-10-01 23:16:18,181Z ERROR detail_failed url=https://books.toscrape.com/catalogue/thirst_946/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:18,387Z INFO detail_start url=https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html
+2026-10-01 23:16:22,324Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:22,530Z INFO detail_start url=https://books.toscrape.com/catalogue/the-secret-of-dreadwillow-carse_944/index.html
+2026-10-01 23:16:23,892Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-secret-of-dreadwillow-carse_944/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:24,097Z INFO detail_start url=https://books.toscrape.com/catalogue/the-pioneer-woman-cooks-dinnertime-comfort-classics-freezer-food-16-minute-meals-and-other-delicious-ways-to-solve-supper_943/index.html
+2026-10-01 23:16:26,072Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-pioneer-woman-cooks-dinnertime-comfort-classics-freezer-food-16-minute-meals-and-other-delicious-ways-to-solve-supper_943/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:26,275Z INFO detail_start url=https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html
+2026-10-01 23:16:27,608Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:27,813Z INFO detail_start url=https://books.toscrape.com/catalogue/the-natural-history-of-us-the-fine-art-of-pretending-2_941/index.html
+2026-10-01 23:16:30,217Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-natural-history-of-us-the-fine-art-of-pretending-2_941/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:30,428Z INFO page_completed page=3 records=39
+2026-10-01 23:16:34,903Z INFO detail_start url=https://books.toscrape.com/catalogue/the-nameless-city-the-nameless-city-1_940/index.html
+2026-10-01 23:16:36,229Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-nameless-city-the-nameless-city-1_940/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:36,432Z INFO detail_start url=https://books.toscrape.com/catalogue/the-murder-that-never-was-forensic-instincts-5_939/index.html
+2026-10-01 23:16:38,458Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-murder-that-never-was-forensic-instincts-5_939/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:38,662Z INFO detail_start url=https://books.toscrape.com/catalogue/the-most-perfect-thing-inside-and-outside-a-birds-egg_938/index.html
+2026-10-01 23:16:40,700Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-most-perfect-thing-inside-and-outside-a-birds-egg_938/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:40,906Z INFO detail_start url=https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html
+2026-10-01 23:16:42,276Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:42,480Z INFO detail_start url=https://books.toscrape.com/catalogue/the-life-changing-magic-of-tidying-up-the-japanese-art-of-decluttering-and-organizing_936/index.html
+2026-10-01 23:16:43,796Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-life-changing-magic-of-tidying-up-the-japanese-art-of-decluttering-and-organizing_936/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:44,001Z INFO detail_start url=https://books.toscrape.com/catalogue/the-inefficiency-assassin-time-management-tactics-for-working-smarter-not-longer_935/index.html
+2026-10-01 23:16:45,333Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-inefficiency-assassin-time-management-tactics-for-working-smarter-not-longer_935/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:45,537Z INFO detail_start url=https://books.toscrape.com/catalogue/the-gutsy-girl-escapades-for-your-life-of-epic-adventure_934/index.html
+2026-10-01 23:16:46,875Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-gutsy-girl-escapades-for-your-life-of-epic-adventure_934/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:47,081Z INFO detail_start url=https://books.toscrape.com/catalogue/the-electric-pencil-drawings-from-inside-state-hospital-no-3_933/index.html
+2026-10-01 23:16:48,436Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-electric-pencil-drawings-from-inside-state-hospital-no-3_933/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:48,638Z INFO detail_start url=https://books.toscrape.com/catalogue/the-death-of-humanity-and-the-case-for-life_932/index.html
+2026-10-01 23:16:51,125Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-death-of-humanity-and-the-case-for-life_932/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:51,332Z INFO detail_start url=https://books.toscrape.com/catalogue/the-bulletproof-diet-lose-up-to-a-pound-a-day-reclaim-energy-and-focus-upgrade-your-life_931/index.html
+2026-10-01 23:16:52,665Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-bulletproof-diet-lose-up-to-a-pound-a-day-reclaim-energy-and-focus-upgrade-your-life_931/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:16:52,871Z INFO detail_start url=https://books.toscrape.com/catalogue/the-art-forger_930/index.html
+2026-10-01 23:16:54,213Z ERROR detail_failed url=https://books.toscrape.com/catalogue/the-art-forger_930/index.html error=sequence item 1: expected str instance, Node found
+Traceback (most recent call last):
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 100, in main
+    rec=detail(product_url,"")
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 66, in detail
+    availability=re.sub(r"\s+"," ",stock.text()).strip() if stock else ""
+                                   ~~~~~~~~~~^^
+  File "/Users/subharjunbose/Desktop/Intern/product_research/extract_products.py", line 14, in text
+    def text(self): return " ".join(self.sequence).strip()
+                           ~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: sequence item 1: expected str instance, Node found
+2026-10-01 23:17:24,482Z INFO detail_start url=https://books.toscrape.com/catalogue/slow-states-of-collapse-poems_960/index.html
+2026-10-01 23:17:26,039Z INFO product_saved record_id=b4fd5943413e089a url=https://books.toscrape.com/catalogue/slow-states-of-collapse-poems_960/index.html
+2026-10-01 23:17:26,245Z INFO detail_start url=https://books.toscrape.com/catalogue/reasons-to-stay-alive_959/index.html
+2026-10-01 23:17:27,692Z INFO product_saved record_id=c8f7f0cb1abb9cac url=https://books.toscrape.com/catalogue/reasons-to-stay-alive_959/index.html
+2026-10-01 23:17:27,897Z INFO detail_start url=https://books.toscrape.com/catalogue/private-paris-private-10_958/index.html
+2026-10-01 23:17:29,349Z INFO product_saved record_id=b12b89017878a60d url=https://books.toscrape.com/catalogue/private-paris-private-10_958/index.html
+2026-10-01 23:17:29,555Z INFO detail_start url=https://books.toscrape.com/catalogue/higherselfie-wake-up-your-life-free-your-soul-find-your-tribe_957/index.html
+2026-10-01 23:17:30,934Z INFO product_saved record_id=c27f6e1f185b0383 url=https://books.toscrape.com/catalogue/higherselfie-wake-up-your-life-free-your-soul-find-your-tribe_957/index.html
+2026-10-01 23:17:31,137Z INFO detail_start url=https://books.toscrape.com/catalogue/without-borders-wanderlove-1_956/index.html
+2026-10-01 23:17:32,513Z INFO product_saved record_id=acddfeab2a407640 url=https://books.toscrape.com/catalogue/without-borders-wanderlove-1_956/index.html
+2026-10-01 23:17:32,719Z INFO detail_start url=https://books.toscrape.com/catalogue/when-we-collided_955/index.html
+2026-10-01 23:17:34,144Z INFO product_saved record_id=3ecb690d1542c568 url=https://books.toscrape.com/catalogue/when-we-collided_955/index.html
+2026-10-01 23:17:34,349Z INFO detail_start url=https://books.toscrape.com/catalogue/we-love-you-charlie-freeman_954/index.html
+2026-10-01 23:17:35,679Z INFO product_saved record_id=8d455c7539795d2a url=https://books.toscrape.com/catalogue/we-love-you-charlie-freeman_954/index.html
+2026-10-01 23:17:35,881Z INFO detail_start url=https://books.toscrape.com/catalogue/untitled-collection-sabbath-poems-2014_953/index.html
+2026-10-01 23:17:37,218Z INFO product_saved record_id=657fe5ead67a7767 url=https://books.toscrape.com/catalogue/untitled-collection-sabbath-poems-2014_953/index.html
+2026-10-01 23:17:37,423Z INFO detail_start url=https://books.toscrape.com/catalogue/unseen-city-the-majesty-of-pigeons-the-discreet-charm-of-snails-other-wonders-of-the-urban-wilderness_952/index.html
+2026-10-01 23:17:38,757Z INFO product_saved record_id=d170b5a0da46380e url=https://books.toscrape.com/catalogue/unseen-city-the-majesty-of-pigeons-the-discreet-charm-of-snails-other-wonders-of-the-urban-wilderness_952/index.html
+2026-10-01 23:17:38,963Z INFO detail_start url=https://books.toscrape.com/catalogue/unicorn-tracks_951/index.html
+2026-10-01 23:17:40,270Z INFO product_saved record_id=7ae099f3898e0209 url=https://books.toscrape.com/catalogue/unicorn-tracks_951/index.html
+2026-10-01 23:17:40,470Z INFO detail_start url=https://books.toscrape.com/catalogue/unbound-how-eight-technologies-made-us-human-transformed-society-and-brought-our-world-to-the-brink_950/index.html
+2026-10-01 23:17:41,788Z INFO product_saved record_id=9a9d6e9bc555731e url=https://books.toscrape.com/catalogue/unbound-how-eight-technologies-made-us-human-transformed-society-and-brought-our-world-to-the-brink_950/index.html
+2026-10-01 23:17:41,993Z INFO detail_start url=https://books.toscrape.com/catalogue/tsubasa-world-chronicle-2-tsubasa-world-chronicle-2_949/index.html
+2026-10-01 23:17:43,389Z INFO product_saved record_id=09555be379ad9253 url=https://books.toscrape.com/catalogue/tsubasa-world-chronicle-2-tsubasa-world-chronicle-2_949/index.html
+2026-10-01 23:17:43,594Z INFO detail_start url=https://books.toscrape.com/catalogue/throwing-rocks-at-the-google-bus-how-growth-became-the-enemy-of-prosperity_948/index.html
+2026-10-01 23:17:45,002Z INFO product_saved record_id=7858914fad68493c url=https://books.toscrape.com/catalogue/throwing-rocks-at-the-google-bus-how-growth-became-the-enemy-of-prosperity_948/index.html
+2026-10-01 23:17:45,206Z INFO detail_start url=https://books.toscrape.com/catalogue/this-one-summer_947/index.html
+2026-10-01 23:17:46,548Z INFO product_saved record_id=51653ef291ab7ddc url=https://books.toscrape.com/catalogue/this-one-summer_947/index.html
+2026-10-01 23:17:46,754Z INFO detail_start url=https://books.toscrape.com/catalogue/thirst_946/index.html
+2026-10-01 23:17:48,175Z INFO product_saved record_id=709822d0b5bcb7f4 url=https://books.toscrape.com/catalogue/thirst_946/index.html
+2026-10-01 23:17:48,379Z INFO detail_start url=https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html
+2026-10-01 23:17:49,690Z INFO product_saved record_id=4eed62cf5f8d8edf url=https://books.toscrape.com/catalogue/the-torch-is-passed-a-harding-family-story_945/index.html
+2026-10-01 23:17:49,892Z INFO detail_start url=https://books.toscrape.com/catalogue/the-secret-of-dreadwillow-carse_944/index.html
+2026-10-01 23:17:51,248Z INFO product_saved record_id=b5ea0b5dabed25a8 url=https://books.toscrape.com/catalogue/the-secret-of-dreadwillow-carse_944/index.html
+2026-10-01 23:17:51,453Z INFO detail_start url=https://books.toscrape.com/catalogue/the-pioneer-woman-cooks-dinnertime-comfort-classics-freezer-food-16-minute-meals-and-other-delicious-ways-to-solve-supper_943/index.html
+2026-10-01 23:17:52,795Z INFO product_saved record_id=142d767a56a9254d url=https://books.toscrape.com/catalogue/the-pioneer-woman-cooks-dinnertime-comfort-classics-freezer-food-16-minute-meals-and-other-delicious-ways-to-solve-supper_943/index.html
+2026-10-01 23:17:53,001Z INFO detail_start url=https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html
+2026-10-01 23:17:54,354Z INFO product_saved record_id=5ee94540d0749ea0 url=https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html
+2026-10-01 23:17:54,559Z INFO detail_start url=https://books.toscrape.com/catalogue/the-natural-history-of-us-the-fine-art-of-pretending-2_941/index.html
+2026-10-01 23:17:55,914Z INFO product_saved record_id=cedf82b5086e4691 url=https://books.toscrape.com/catalogue/the-natural-history-of-us-the-fine-art-of-pretending-2_941/index.html
+2026-10-01 23:17:56,121Z INFO page_completed page=3 records=59
+2026-10-01 23:17:57,774Z INFO detail_start url=https://books.toscrape.com/catalogue/the-nameless-city-the-nameless-city-1_940/index.html
+2026-10-01 23:17:59,126Z INFO product_saved record_id=7d385d34d12e60ff url=https://books.toscrape.com/catalogue/the-nameless-city-the-nameless-city-1_940/index.html
+2026-10-01 23:17:59,329Z INFO detail_start url=https://books.toscrape.com/catalogue/the-murder-that-never-was-forensic-instincts-5_939/index.html
+2026-10-01 23:18:00,681Z INFO product_saved record_id=d01ac97e2b8947c2 url=https://books.toscrape.com/catalogue/the-murder-that-never-was-forensic-instincts-5_939/index.html
+2026-10-01 23:18:00,886Z INFO detail_start url=https://books.toscrape.com/catalogue/the-most-perfect-thing-inside-and-outside-a-birds-egg_938/index.html
+2026-10-01 23:18:02,199Z INFO product_saved record_id=aadee1c326d286e3 url=https://books.toscrape.com/catalogue/the-most-perfect-thing-inside-and-outside-a-birds-egg_938/index.html
+2026-10-01 23:18:02,405Z INFO detail_start url=https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html
+2026-10-01 23:18:03,791Z INFO product_saved record_id=31075275518532d7 url=https://books.toscrape.com/catalogue/the-mindfulness-and-acceptance-workbook-for-anxiety-a-guide-to-breaking-free-from-anxiety-phobias-and-worry-using-acceptance-and-commitment-therapy_937/index.html
+2026-10-01 23:18:03,995Z INFO detail_start url=https://books.toscrape.com/catalogue/the-life-changing-magic-of-tidying-up-the-japanese-art-of-decluttering-and-organizing_936/index.html
+2026-10-01 23:18:05,338Z INFO product_saved record_id=0da9aa9d24677fc0 url=https://books.toscrape.com/catalogue/the-life-changing-magic-of-tidying-up-the-japanese-art-of-decluttering-and-organizing_936/index.html
+2026-10-01 23:18:05,543Z INFO detail_start url=https://books.toscrape.com/catalogue/the-inefficiency-assassin-time-management-tactics-for-working-smarter-not-longer_935/index.html
+2026-10-01 23:18:06,892Z INFO product_saved record_id=8c9e6bf2467d740d url=https://books.toscrape.com/catalogue/the-inefficiency-assassin-time-management-tactics-for-working-smarter-not-longer_935/index.html
+2026-10-01 23:18:07,097Z INFO detail_start url=https://books.toscrape.com/catalogue/the-gutsy-girl-escapades-for-your-life-of-epic-adventure_934/index.html
+2026-10-01 23:18:08,410Z INFO product_saved record_id=acd86a5426e21ca0 url=https://books.toscrape.com/catalogue/the-gutsy-girl-escapades-for-your-life-of-epic-adventure_934/index.html
+2026-10-01 23:18:08,615Z INFO detail_start url=https://books.toscrape.com/catalogue/the-electric-pencil-drawings-from-inside-state-hospital-no-3_933/index.html
+2026-10-01 23:18:09,994Z INFO product_saved record_id=a30b270e25489e5c url=https://books.toscrape.com/catalogue/the-electric-pencil-drawings-from-inside-state-hospital-no-3_933/index.html
+2026-10-01 23:18:10,199Z INFO detail_start url=https://books.toscrape.com/catalogue/the-death-of-humanity-and-the-case-for-life_932/index.html
+2026-10-01 23:18:11,550Z INFO product_saved record_id=bd261725b99f5983 url=https://books.toscrape.com/catalogue/the-death-of-humanity-and-the-case-for-life_932/index.html
+2026-10-01 23:18:11,753Z INFO detail_start url=https://books.toscrape.com/catalogue/the-bulletproof-diet-lose-up-to-a-pound-a-day-reclaim-energy-and-focus-upgrade-your-life_931/index.html
+2026-10-01 23:18:13,088Z INFO product_saved record_id=43c6a960757cf559 url=https://books.toscrape.com/catalogue/the-bulletproof-diet-lose-up-to-a-pound-a-day-reclaim-energy-and-focus-upgrade-your-life_931/index.html
+2026-10-01 23:18:13,293Z INFO detail_start url=https://books.toscrape.com/catalogue/the-art-forger_930/index.html
+2026-10-01 23:18:14,632Z INFO product_saved record_id=80cfab6bcff3a244 url=https://books.toscrape.com/catalogue/the-art-forger_930/index.html
+2026-10-01 23:18:14,837Z INFO detail_start url=https://books.toscrape.com/catalogue/the-age-of-genius-the-seventeenth-century-and-the-birth-of-the-modern-mind_929/index.html
+2026-10-01 23:18:16,175Z INFO product_saved record_id=a3d2a4250807f1e9 url=https://books.toscrape.com/catalogue/the-age-of-genius-the-seventeenth-century-and-the-birth-of-the-modern-mind_929/index.html
+2026-10-01 23:18:16,380Z INFO detail_start url=https://books.toscrape.com/catalogue/the-activists-tao-te-ching-ancient-advice-for-a-modern-revolution_928/index.html
+2026-10-01 23:18:17,752Z INFO product_saved record_id=7d6d2a6c0276f81b url=https://books.toscrape.com/catalogue/the-activists-tao-te-ching-ancient-advice-for-a-modern-revolution_928/index.html
+2026-10-01 23:18:17,954Z INFO detail_start url=https://books.toscrape.com/catalogue/spark-joy-an-illustrated-master-class-on-the-art-of-organizing-and-tidying-up_927/index.html
+2026-10-01 23:18:19,274Z INFO product_saved record_id=87b0615b6e1f4d7b url=https://books.toscrape.com/catalogue/spark-joy-an-illustrated-master-class-on-the-art-of-organizing-and-tidying-up_927/index.html
+2026-10-01 23:18:19,479Z INFO detail_start url=https://books.toscrape.com/catalogue/soul-reader_926/index.html
+2026-10-01 23:18:20,835Z INFO product_saved record_id=e6af5bf1163c1151 url=https://books.toscrape.com/catalogue/soul-reader_926/index.html
+2026-10-01 23:18:21,036Z INFO detail_start url=https://books.toscrape.com/catalogue/security_925/index.html
+2026-10-01 23:18:22,353Z INFO product_saved record_id=6f78a0d744c35456 url=https://books.toscrape.com/catalogue/security_925/index.html
+2026-10-01 23:18:22,558Z INFO detail_start url=https://books.toscrape.com/catalogue/saga-volume-6-saga-collected-editions-6_924/index.html
+2026-10-01 23:18:23,895Z INFO product_saved record_id=c849f0b2f5d6a742 url=https://books.toscrape.com/catalogue/saga-volume-6-saga-collected-editions-6_924/index.html
+2026-10-01 23:18:24,099Z INFO detail_start url=https://books.toscrape.com/catalogue/saga-volume-5-saga-collected-editions-5_923/index.html
+2026-10-01 23:18:25,415Z INFO product_saved record_id=53a3d11bb568cc8b url=https://books.toscrape.com/catalogue/saga-volume-5-saga-collected-editions-5_923/index.html
+2026-10-01 23:18:25,618Z INFO detail_start url=https://books.toscrape.com/catalogue/reskilling-america-learning-to-labor-in-the-twenty-first-century_922/index.html
+2026-10-01 23:18:26,945Z INFO product_saved record_id=d7310206583a54b6 url=https://books.toscrape.com/catalogue/reskilling-america-learning-to-labor-in-the-twenty-first-century_922/index.html
+2026-10-01 23:18:27,151Z INFO detail_start url=https://books.toscrape.com/catalogue/rat-queens-vol-3-demons-rat-queens-collected-editions-11-15_921/index.html
+2026-10-01 23:18:28,498Z INFO product_saved record_id=c82a3e358c773c73 url=https://books.toscrape.com/catalogue/rat-queens-vol-3-demons-rat-queens-collected-editions-11-15_921/index.html
+2026-10-01 23:18:28,709Z INFO page_completed page=4 records=79
+2026-10-01 23:18:30,468Z INFO detail_start url=https://books.toscrape.com/catalogue/princess-jellyfish-2-in-1-omnibus-vol-01-princess-jellyfish-2-in-1-omnibus-1_920/index.html
+2026-10-01 23:18:31,798Z INFO product_saved record_id=0fa6dceead7ce47a url=https://books.toscrape.com/catalogue/princess-jellyfish-2-in-1-omnibus-vol-01-princess-jellyfish-2-in-1-omnibus-1_920/index.html
+2026-10-01 23:18:32,003Z INFO detail_start url=https://books.toscrape.com/catalogue/princess-between-worlds-wide-awake-princess-5_919/index.html
+2026-10-01 23:18:33,350Z INFO product_saved record_id=0e691eda369f4e09 url=https://books.toscrape.com/catalogue/princess-between-worlds-wide-awake-princess-5_919/index.html
+2026-10-01 23:18:33,555Z INFO detail_start url=https://books.toscrape.com/catalogue/pop-gun-war-volume-1-gift_918/index.html
+2026-10-01 23:18:34,945Z INFO product_saved record_id=e80f8e518b300dfe url=https://books.toscrape.com/catalogue/pop-gun-war-volume-1-gift_918/index.html
+2026-10-01 23:18:35,151Z INFO detail_start url=https://books.toscrape.com/catalogue/political-suicide-missteps-peccadilloes-bad-calls-backroom-hijinx-sordid-pasts-rotten-breaks-and-just-plain-dumb-mistakes-in-the-annals-of-american-politics_917/index.html
+2026-10-01 23:18:36,456Z INFO product_saved record_id=7392c0032f92d816 url=https://books.toscrape.com/catalogue/political-suicide-missteps-peccadilloes-bad-calls-backroom-hijinx-sordid-pasts-rotten-breaks-and-just-plain-dumb-mistakes-in-the-annals-of-american-politics_917/index.html
+2026-10-01 23:18:36,660Z INFO detail_start url=https://books.toscrape.com/catalogue/patience_916/index.html
+2026-10-01 23:18:38,064Z INFO product_saved record_id=9429b4d59c537af5 url=https://books.toscrape.com/catalogue/patience_916/index.html
+2026-10-01 23:18:38,269Z INFO detail_start url=https://books.toscrape.com/catalogue/outcast-vol-1-a-darkness-surrounds-him-outcast-1_915/index.html
+2026-10-01 23:18:39,579Z INFO product_saved record_id=889139b8e9c4cb36 url=https://books.toscrape.com/catalogue/outcast-vol-1-a-darkness-surrounds-him-outcast-1_915/index.html
+2026-10-01 23:18:39,785Z INFO detail_start url=https://books.toscrape.com/catalogue/orange-the-complete-collection-1-orange-the-complete-collection-1_914/index.html
+2026-10-01 23:18:41,148Z INFO product_saved record_id=11809b1d323b3057 url=https://books.toscrape.com/catalogue/orange-the-complete-collection-1-orange-the-complete-collection-1_914/index.html
+2026-10-01 23:18:41,353Z INFO detail_start url=https://books.toscrape.com/catalogue/online-marketing-for-busy-authors-a-step-by-step-guide_913/index.html
+2026-10-01 23:18:42,700Z INFO product_saved record_id=9ffa38d3b832433a url=https://books.toscrape.com/catalogue/online-marketing-for-busy-authors-a-step-by-step-guide_913/index.html
+2026-10-01 23:18:42,902Z INFO detail_start url=https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html
+2026-10-01 23:18:44,246Z INFO product_saved record_id=b757c0c361e689ce url=https://books.toscrape.com/catalogue/on-a-midnight-clear_912/index.html
+2026-10-01 23:18:44,452Z INFO detail_start url=https://books.toscrape.com/catalogue/obsidian-lux-1_911/index.html
+2026-10-01 23:18:45,848Z INFO product_saved record_id=3c346ab1e76ae1f6 url=https://books.toscrape.com/catalogue/obsidian-lux-1_911/index.html
+2026-10-01 23:18:46,053Z INFO detail_start url=https://books.toscrape.com/catalogue/my-paris-kitchen-recipes-and-stories_910/index.html
+2026-10-01 23:18:47,390Z INFO product_saved record_id=784bc2279baa878d url=https://books.toscrape.com/catalogue/my-paris-kitchen-recipes-and-stories_910/index.html
+2026-10-01 23:18:47,595Z INFO detail_start url=https://books.toscrape.com/catalogue/masks-and-shadows_909/index.html
+2026-10-01 23:18:48,909Z INFO product_saved record_id=fa9610a50a1bf149 url=https://books.toscrape.com/catalogue/masks-and-shadows_909/index.html
+2026-10-01 23:18:49,111Z INFO detail_start url=https://books.toscrape.com/catalogue/mama-tried-traditional-italian-cooking-for-the-screwed-crude-vegan-and-tattooed_908/index.html
+2026-10-01 23:18:50,489Z INFO product_saved record_id=72f9d5be3472d34e url=https://books.toscrape.com/catalogue/mama-tried-traditional-italian-cooking-for-the-screwed-crude-vegan-and-tattooed_908/index.html
+2026-10-01 23:18:50,695Z INFO detail_start url=https://books.toscrape.com/catalogue/lumberjanes-vol-2-friendship-to-the-max-lumberjanes-5-8_907/index.html
+2026-10-01 23:18:52,075Z INFO product_saved record_id=460089f796fb3f82 url=https://books.toscrape.com/catalogue/lumberjanes-vol-2-friendship-to-the-max-lumberjanes-5-8_907/index.html
+2026-10-01 23:18:52,278Z INFO detail_start url=https://books.toscrape.com/catalogue/lumberjanes-vol-1-beware-the-kitten-holy-lumberjanes-1-4_906/index.html
+2026-10-01 23:18:53,616Z INFO product_saved record_id=b6ee99bcf06fc91f url=https://books.toscrape.com/catalogue/lumberjanes-vol-1-beware-the-kitten-holy-lumberjanes-1-4_906/index.html
+2026-10-01 23:18:53,822Z INFO detail_start url=https://books.toscrape.com/catalogue/lumberjanes-vol-3-a-terrible-plan-lumberjanes-9-12_905/index.html
+2026-10-01 23:18:55,152Z INFO product_saved record_id=57e5a4d515c8ce44 url=https://books.toscrape.com/catalogue/lumberjanes-vol-3-a-terrible-plan-lumberjanes-9-12_905/index.html
+2026-10-01 23:18:55,358Z INFO detail_start url=https://books.toscrape.com/catalogue/layered-baking-building-and-styling-spectacular-cakes_904/index.html
+2026-10-01 23:18:56,689Z INFO product_saved record_id=7b75cc7f223791f4 url=https://books.toscrape.com/catalogue/layered-baking-building-and-styling-spectacular-cakes_904/index.html
+2026-10-01 23:18:56,890Z INFO detail_start url=https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html
+2026-10-01 23:18:58,221Z INFO product_saved record_id=228f74b74f3a08ae url=https://books.toscrape.com/catalogue/judo-seven-steps-to-black-belt-an-introductory-guide-for-beginners_903/index.html
+2026-10-01 23:18:58,426Z INFO detail_start url=https://books.toscrape.com/catalogue/join_902/index.html
+2026-10-01 23:18:59,769Z INFO product_saved record_id=18ad3ed896c7ce05 url=https://books.toscrape.com/catalogue/join_902/index.html
+2026-10-01 23:18:59,975Z INFO detail_start url=https://books.toscrape.com/catalogue/in-the-country-we-love-my-family-divided_901/index.html
+2026-10-01 23:19:01,304Z INFO product_saved record_id=b136b1b180ca753a url=https://books.toscrape.com/catalogue/in-the-country-we-love-my-family-divided_901/index.html
+2026-10-01 23:19:01,515Z INFO page_completed page=5 records=99
+2026-10-01 23:19:33,293Z INFO detail_start url=https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html
+2026-10-01 23:19:34,608Z INFO product_saved record_id=55f9da0c5eea2e10 url=https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html
+2026-10-01 23:19:34,820Z INFO page_completed page=2 records=100

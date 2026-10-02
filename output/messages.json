@@ -1,0 +1,92 @@
+[
+  {
+    "customer_id": "C001",
+    "name": "Avery",
+    "email_subject": "Book picks selected for you, Avery",
+    "email_body": "Hi Avery,\n\nHere is 1 book pick based on your preferences:\n\n1. Thirst — £17.27\n   https://books.toscrape.com/catalogue/thirst_946/index.html\n   Fiction, rated 5/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Avery! Your book picks:\nThirst (£17.27) https://books.toscrape.com/catalogue/thirst_946/index.html — Fiction, 5/5 fits your limits.",
+    "match_count": 1,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C002",
+    "name": "Blake",
+    "email_subject": "Book picks selected for you, Blake",
+    "email_body": "Hi Blake,\n\nHere is 1 book pick based on your preferences:\n\n1. The Elephant Tree — £23.82\n   https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html\n   Thriller, rated 5/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Blake! Your book picks:\nThe Elephant Tree (£23.82) https://books.toscrape.com/catalogue/the-elephant-tree_968/index.html — Thriller, 5/5 fits your limits.",
+    "match_count": 1,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C003",
+    "name": "Casey",
+    "email_subject": "Book picks selected for you, Casey",
+    "email_body": "Hi Casey,\n\nHere are 2 book picks based on your preferences:\n\n1. Chase Me (Paris Nights #2) — £25.27\n   https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html\n   Romance, rated 5/5: matches your category and meets your budget and rating limits.\n\n2. Black Dust — £34.53\n   https://books.toscrape.com/catalogue/black-dust_976/index.html\n   Romance, rated 5/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Casey! Your book picks:\nChase Me (Paris Nights #2) (£25.27) https://books.toscrape.com/catalogue/chase-me-paris-nights-2_977/index.html — Romance, 5/5 fits your limits.\nBlack Dust (£34.53) https://books.toscrape.com/catalogue/black-dust_976/index.html — Romance, 5/5 fits your limits.",
+    "match_count": 2,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C004",
+    "name": "Devon",
+    "email_subject": "Book picks selected for you, Devon",
+    "email_body": "Hi Devon,\n\nHere are 3 book picks based on your preferences:\n\n1. Princess Between Worlds (Wide-Awake Princess #5) — £13.34\n   https://books.toscrape.com/catalogue/princess-between-worlds-wide-awake-princess-5_919/index.html\n   Fantasy, rated 5/5: matches your category and meets your budget and rating limits.\n\n2. Join — £35.67\n   https://books.toscrape.com/catalogue/join_902/index.html\n   Science Fiction, rated 5/5: matches your category and meets your budget and rating limits.\n\n3. Unicorn Tracks — £18.78\n   https://books.toscrape.com/catalogue/unicorn-tracks_951/index.html\n   Fantasy, rated 3/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Devon! Your book picks:\nPrincess Between Worlds (Wide-Awake Princess #5) (£13.34) https://books.toscrape.com/catalogue/princess-between-worlds-wide-awake-princess-5_919/index.html — Fantasy, 5/5 fits your limits.\nJoin (£35.67) https://books.toscrape.com/catalogue/join_902/index.html — Science Fiction, 5/5 fits your limits.\nUnicorn Tracks (£18.78) https://books.toscrape.com/catalogue/unicorn-tracks_951/index.html — Fantasy, 3/5 fits your limits.",
+    "match_count": 3,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C005",
+    "name": "Emery",
+    "email_subject": "Book picks selected for you, Emery",
+    "email_body": "Hi Emery,\n\nHere are 3 book picks based on your preferences:\n\n1. Mama Tried: Traditional Italian Cooking for the Screwed, Crude, Vegan, and Tattooed — £14.02\n   https://books.toscrape.com/catalogue/mama-tried-traditional-italian-cooking-for-the-screwed-crude-vegan-and-tattooed_908/index.html\n   Food and Drink, rated 4/5: matches your category and meets your budget and rating limits.\n\n2. Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More — £30.52\n   https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html\n   Food and Drink, rated 3/5: matches your category and meets your budget and rating limits.\n\n3. My Paris Kitchen: Recipes and Stories — £33.37\n   https://books.toscrape.com/catalogue/my-paris-kitchen-recipes-and-stories_910/index.html\n   Food and Drink, rated 2/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Emery! Your book picks:\nMama Tried: Traditional Italian Cooking for the Screwed, Crude, Vegan, and Tattooed (£14.02) https://books.toscrape.com/catalogue/mama-tried-traditional-italian-cooking-for-the-screwed-crude-vegan-and-tattooed_908/index.html — Food and Drink, 4/5 fits your limits.\nFoolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More (£30.52) https://books.toscrape.com/catalogue/foolproof-preserving-a-guide-to-small-batch-jams-jellies-pickles-condiments-and-more-a-foolproof-guide-to-making-small-batch-jams-jellies-pickles-condiments-and-more_978/index.html — Food and Drink, 3/5 fits your limits.\nMy Paris Kitchen: Recipes and Stories (£33.37) https://books.toscrape.com/catalogue/my-paris-kitchen-recipes-and-stories_910/index.html — Food and Drink, 2/5 fits your limits.",
+    "match_count": 3,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C006",
+    "name": "Finley",
+    "email_subject": "Book picks selected for you, Finley",
+    "email_body": "Hi Finley,\n\nHere are 3 book picks based on your preferences:\n\n1. Princess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1) — £13.61\n   https://books.toscrape.com/catalogue/princess-jellyfish-2-in-1-omnibus-vol-01-princess-jellyfish-2-in-1-omnibus-1_920/index.html\n   Sequential Art, rated 5/5: matches your category and meets your budget and rating limits.\n\n2. Outcast, Vol. 1: A Darkness Surrounds Him (Outcast #1) — £15.44\n   https://books.toscrape.com/catalogue/outcast-vol-1-a-darkness-surrounds-him-outcast-1_915/index.html\n   Sequential Art, rated 4/5: matches your category and meets your budget and rating limits.\n\n3. This One Summer — £19.49\n   https://books.toscrape.com/catalogue/this-one-summer_947/index.html\n   Sequential Art, rated 4/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Finley! Your book picks:\nPrincess Jellyfish 2-in-1 Omnibus, Vol. 01 (Princess Jellyfish 2-in-1 Omnibus #1) (£13.61) https://books.toscrape.com/catalogue/princess-jellyfish-2-in-1-omnibus-vol-01-princess-jellyfish-2-in-1-omnibus-1_920/index.html — Sequential Art, 5/5 fits your limits.\nOutcast, Vol. 1: A Darkness Surrounds Him (Outcast #1) (£15.44) https://books.toscrape.com/catalogue/outcast-vol-1-a-darkness-surrounds-him-outcast-1_915/index.html — Sequential Art, 4/5 fits your limits.\nThis One Summer (£19.49) https://books.toscrape.com/catalogue/this-one-summer_947/index.html — Sequential Art, 4/5 fits your limits.",
+    "match_count": 3,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C007",
+    "name": "Gray",
+    "email_subject": "Book picks selected for you, Gray",
+    "email_body": "Hi Gray,\n\nWe reviewed our catalogue against your preferences, but no books currently met all your stated category, budget, and rating requirements.\n\nHappy reading!",
+    "whatsapp_message": "Hi Gray! No books in this catalogue sample met all your selected category, budget and rating limits.",
+    "match_count": 0,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C008",
+    "name": "Harper",
+    "email_subject": "Book picks selected for you, Harper",
+    "email_body": "Hi Harper,\n\nHere are 2 book picks based on your preferences:\n\n1. #HigherSelfie: Wake Up Your Life. Free Your Soul. Find Your Tribe. — £23.11\n   https://books.toscrape.com/catalogue/higherselfie-wake-up-your-life-free-your-soul-find-your-tribe_957/index.html\n   Nonfiction, rated 5/5: matches your category and meets your budget and rating limits.\n\n2. In the Country We Love: My Family Divided — £22.00\n   https://books.toscrape.com/catalogue/in-the-country-we-love-my-family-divided_901/index.html\n   Nonfiction, rated 4/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Harper! Your book picks:\n#HigherSelfie: Wake Up Your Life. Free Your Soul. Find Your Tribe. (£23.11) https://books.toscrape.com/catalogue/higherselfie-wake-up-your-life-free-your-soul-find-your-tribe_957/index.html — Nonfiction, 5/5 fits your limits.\nIn the Country We Love: My Family Divided (£22.00) https://books.toscrape.com/catalogue/in-the-country-we-love-my-family-divided_901/index.html — Nonfiction, 4/5 fits your limits.",
+    "match_count": 2,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C009",
+    "name": "Indigo",
+    "email_subject": "Book picks selected for you, Indigo",
+    "email_body": "Hi Indigo,\n\nHere is 1 book pick based on your preferences:\n\n1. Untitled Collection: Sabbath Poems 2014 — £14.27\n   https://books.toscrape.com/catalogue/untitled-collection-sabbath-poems-2014_953/index.html\n   Poetry, rated 4/5: matches your category and meets your budget and rating limits.\n\nHappy reading!",
+    "whatsapp_message": "Hi Indigo! Your book picks:\nUntitled Collection: Sabbath Poems 2014 (£14.27) https://books.toscrape.com/catalogue/untitled-collection-sabbath-poems-2014_953/index.html — Poetry, 4/5 fits your limits.",
+    "match_count": 1,
+    "mode": "draft"
+  },
+  {
+    "customer_id": "C010",
+    "name": "Jordan",
+    "email_subject": "Book picks selected for you, Jordan",
+    "email_body": "Hi Jordan,\n\nWe reviewed our catalogue against your preferences, but no books currently met all your stated category, budget, and rating requirements.\n\nHappy reading!",
+    "whatsapp_message": "Hi Jordan! No books in this catalogue sample met all your selected category, budget and rating limits.",
+    "match_count": 0,
+    "mode": "draft"
+  }
+]

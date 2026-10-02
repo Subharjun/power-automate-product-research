@@ -1,0 +1,16 @@
+{
+  "base_url": "https://books.toscrape.com/",
+  "catalogue_pages": 5,
+  "output_dir": "output",
+  "request_delay_seconds": 0.2,
+  "max_products": 100,
+  "matching": {"max_recommendations": 3, "currency": "GBP"},
+  "delivery": {
+    "mode": "draft",
+    "gmail_from": "",
+    "gmail_controlled_test_recipient": "",
+    "whatsapp_controlled_test_recipient": "",
+    "whatsapp_phone_number_id": "",
+    "whatsapp_api_version": "v22.0"
+  }
+}

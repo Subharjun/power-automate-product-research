@@ -1,0 +1,221 @@
+{
+  "attempts": {
+    "de42c1e6db43313045d47754626620ee8072c8347e631730827e2907c4c174dd": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C001",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "8ace4a534c390b5efe6f51ca4d89f048967e7a205df55e304c7fdbcb24c6503a": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C001",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "c1de1c29e037e381ab82d84c00f18a435958ee965905aea723a1f1d2a47f93e2": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C002",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "9cbc8688ebd4fd81a4af8eba6efa649aa1b1cd2ef25878735de4c71a19d205a5": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C002",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "b1317888238013f96cc3e1455a325c83530a11a2dc1b11032dbdc76653bc821c": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C003",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "096c123c6f186cbb34c2644165a58a5a445d87514ea4be935959eed79c08d913": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C003",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "2f98357e0e3d46add21c616395cc12dd11b6a22b3ac83502fe77bd23d644c93e": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C004",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "c96e462e86ef6f67f04f696597f6ceebb7ed8047716475bd92ea5f0b7259c1d2": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C004",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "b93027da08771404be5a97c952eefe23139e77d1126cbeb54d8bb95e58ea3323": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C005",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "339027b9982806752e1293431659638f9e617f75a6c78638a46053d19a7a88ff": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C005",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "d37661fdec460b870266a4e95972f4202962a5ea3f39330f1240093e6028800c": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C006",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "313d1eca3089fa6852d507850c53f16d687e8016293aa9defac2917a60bc89a6": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C006",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "b9e4ca27dff9cdf354c3cb30599484126de822ed1f43914cdb30bf56bf604865": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C007",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "b0177b5c7ce001cc203c0a72eba363f86859453c85970e2b11bda4a20454c59b": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C007",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "cc1f6d9b7efbc62b926bad51f47428ee3232f3cffa496817540a64212e2b1b47": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C008",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "0e998bb300da1eadacf159c2f60fa01ef3da5d87aba714390777f38a39956711": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C008",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "73618330ecddada614537d8d4e544f015df1835d7e1e305883f07d655db8076d": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C009",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "2b642fd349b3d74e9f94d934dc01aaf118b2dcafed513036aa223975f0db1cf9": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C009",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "193886a1713a4ae6a210981a25584be2750a5d5c1039ee06346a3f6510e7c9cb": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C010",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "dda52e0a4ae0c6348dd8978f63c8e5be862e9b46cc52a32d404d689258a32455": {
+      "timestamp": "2026-10-01T17:49:45.011893+00:00",
+      "record_id": "C010",
+      "channel": "whatsapp",
+      "result": "SIMULATED_ONLY",
+      "recipient_configured": false
+    },
+    "16c17c83eb67ac6d46f09958277d23d86356307e4f9ff68fffc36145c903f26e": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C001",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "1985b9bc5dc0ab4f4201efe6ed97168bc01700c5c995ebbc778baffb23086fcd": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C002",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "d60abc3bd277aaf7d46dde9cc18db0f96b00789a3502967459254401e842b69c": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C003",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "4ba6e323c511d68275771391d83467479b496efe8284558e8f150d879c96e59f": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C004",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "a619ad17acac83a1aab2d5cd74a5bce58d31c233550bab7c2a9b907f6899baf8": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C005",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "e6851e4e14b707dbf3e4118a8337e415625a129410d780f1f17fa237812dad10": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C006",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "f09062ac60301e983cb8a9f707b57b884baff7bb8fd20ed038dc84da4867b46b": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C007",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "390513e4ae4083675b43226a9accc5b0b4786379fe310f8b16336ffc49d00235": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C008",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "f8583d9089631835baffe8868b261335b022c07eb0f722b5a5f2e82d12f1082c": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C009",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "ad01f58a4a0a3df24817a63b0aa57c5308e212c866d7094ab02e7a2a1fc7d352": {
+      "timestamp": "2026-10-02T02:45:02.173745+00:00",
+      "record_id": "C010",
+      "channel": "email",
+      "result": "DRAFT_PREPARED",
+      "recipient_configured": false
+    },
+    "4bcf2e41e21b0ba49d5baa0e5169f178b05e5362cd6993e7196f9d6bc507f847": {
+      "timestamp": "2026-10-02T02:54:18.092244+00:00",
+      "record_id": "C001",
+      "channel": "email",
+      "result": "API_ACCEPTED",
+      "recipient_configured": true
+    }
+  }
+}

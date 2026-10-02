@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-10-01T17:52:03.193542+00:00",
+  "method": "Refetched source detail pages and compared parsed values with CSV rows.",
+  "sample_size": 5,
+  "pass_count": 5,
+  "checks": [
+    {
+      "record_id": "a897fe39b1053632",
+      "product_url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+      "fields_compared": [
+        "title",
+        "price_gbp",
+        "rating",
+        "category",
+        "availability",
+        "description"
+      ],
+      "result": "PASS",
+      "mismatches": []
+    },
+    {
+      "record_id": "9528d0948525bf5f",
+      "product_url": "https://books.toscrape.com/catalogue/birdsong-a-story-in-pictures_975/index.html",
+      "fields_compared": [
+        "title",
+        "price_gbp",
+        "rating",
+        "category",
+        "availability",
+        "description"
+      ],
+      "result": "PASS",
+      "mismatches": []
+    },
+    {
+      "record_id": "09555be379ad9253",
+      "product_url": "https://books.toscrape.com/catalogue/tsubasa-world-chronicle-2-tsubasa-world-chronicle-2_949/index.html",
+      "fields_compared": [
+        "title",
+        "price_gbp",
+        "rating",
+        "category",
+        "availability",
+        "description"
+      ],
+      "result": "PASS",
+      "mismatches": []
+    },
+    {
+      "record_id": "c849f0b2f5d6a742",
+      "product_url": "https://books.toscrape.com/catalogue/saga-volume-6-saga-collected-editions-6_924/index.html",
+      "fields_compared": [
+        "title",
+        "price_gbp",
+        "rating",
+        "category",
+        "availability",
+        "description"
+      ],
+      "result": "PASS",
+      "mismatches": []
+    },
+    {
+      "record_id": "55f9da0c5eea2e10",
+      "product_url": "https://books.toscrape.com/catalogue/you-cant-bury-them-all-poems_961/index.html",
+      "fields_compared": [
+        "title",
+        "price_gbp",
+        "rating",
+        "category",
+        "availability",
+        "description"
+      ],
+      "result": "PASS",
+      "mismatches": []
+    }
+  ]
+}

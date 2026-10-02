@@ -1,0 +1,2 @@
+{"timestamp": "2026-10-01T17:52:22.951176+00:00", "record_id": "DEMO-FAILURE", "channel": "email", "result": "FAILED_SIMULATED", "detail": "Injected local demo error; no network request, no message sent, no automatic retry."}
+{"timestamp": "2026-10-01T17:52:22.980359+00:00", "record_id": "DEMO-FAILURE", "channel": "email", "result": "DUPLICATE_BLOCKED", "detail": "Prior simulated attempt exists; no retry."}

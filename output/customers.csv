@@ -1,0 +1,11 @@
+customer_id,name,preferred_categories,max_budget_gbp,min_rating
+C001,Avery,"Fiction|Classics",30,3
+C002,Blake,"Mystery|Thriller",25,3
+C003,Casey,"Romance|Womens Fiction",35,2
+C004,Devon,"Science Fiction|Fantasy",40,3
+C005,Emery,"Travel|Food and Drink",45,2
+C006,Finley,"Sequential Art|Graphic Novels",40,3
+C007,Gray,"Historical Fiction|History",28,3
+C008,Harper,"Nonfiction|Biography",32,4
+C009,Indigo,"Poetry|Short Stories",20,2
+C010,Jordan,"Philosophy|Science",1,5
